@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.khalessi.filepermissionstest.MainActivity">
+
+    <EditText
+        android:id="@+id/eingabeText"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp">
+
+        <TableRow>
+            <Button
+                android:id="@+id/speichern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:text="Text speichern"
+                android:onClick="onSchreibenClick"
+                />
+
+            <Button
+                android:id="@+id/ausgabe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datei lesen" />
+            <Button
+                android:id="@+id/bilder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBilderClick"
+                android:text="Bilder finden" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/ausgabeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="..."
+        />
+
+
+
+</LinearLayout>
+
